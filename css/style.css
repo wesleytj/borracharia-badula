@@ -1,0 +1,865 @@
+/*>>> Globais <<<*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.selected{
+    color: rgb(255, 251, 0) !important;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+/*Títulos das páginas*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.titulo > *{
+    width: 33.3%;
+    float: left;
+}
+
+.titulo > div{
+    max-width: 300px;
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+.titulo h2{
+    font-style: italic;
+}
+/*Botão Mais Informações*/
+.btn{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: rgb(255, 251, 0);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/**********************/
+
+/*>>> Header / Menu <<<*/
+header{
+    padding: 10px 0;
+}
+
+header .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    background-image: url('../images/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 112% 112%;
+    background-position: left top;
+}
+
+/*menu-desktop*/
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul, footer nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li, footer nav ul li{
+    float: left;
+    padding: 0 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+header nav.menu-desktop ul li a, footer nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*menu-mobile*/
+header nav.menu-mobile{
+    /*Escondendo menu-mobile na versao desktop*/
+    display: none;
+
+    width: 60px;
+    height: 60px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(../images/icone-menu-mobile.png);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header nav.menu-mobile ul{
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 2;
+    background-color: #262626;
+}
+
+header nav.menu-mobile ul li{
+    width: 100%;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #404040;
+}
+
+header nav.menu-mobile ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/**********************/
+
+/*>>> Sessão01 | Banner <<<*/
+section.banner{
+    height: 85vh;
+    background-image: url(../images/bg-grande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.txt-banner{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20% ,-50%);
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.txt-banner p{
+    display: table;
+    padding: 15px 20px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transform: skew(-20deg);
+    background-color: rgb(255, 251, 0);
+}
+
+.txt-banner p:nth-of-type(1){
+    margin-left: 75px;
+}
+
+.txt-banner p:nth-of-type(2){
+    margin-left: 50px;
+}
+
+.txt-banner p:nth-of-type(3){
+    margin-left: 25px;
+}
+
+.txt-banner p:nth-of-type(4){
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+/**********************/
+
+/*>>> Sessão02 | Destaques <<<*/
+section.destaques{
+    padding: 60px 0 100px 0;
+}
+
+/*Vitrine*/
+.vitrine-destaques{
+    width: 100%;
+    text-align: center;
+}
+
+.vitrine-single{
+    display: inline-block;
+    width: 33.3%;
+    max-width: 300px;
+    margin: 20px 10px 10px 10px;
+    text-align: left;
+}
+
+.img-vitrine{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+.vitrine-single .info{
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.info h3{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.info p{
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 5px 0 20px 0;
+}
+/**********************/
+
+/*>>> Sessão03 | Serviços-Depoimentos <<<*/
+section.servico-depoimento{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/*servicos*/
+section.servico-depoimento .servico{
+    height: 300px;
+    padding: 40px 20px;
+    background-color: #262626;
+}
+
+.servico .container{
+    width: 80%;
+}
+
+.servico .container > div{
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.servico h2{
+    color: rgb(255, 251, 0);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.servico ul{
+    list-style-type: none;
+}
+
+.servico ul li{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.servico a{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: rgb(255, 251, 0);
+    padding: 10px 15px;
+}
+
+/*depoimento*/
+section.servico-depoimento .depoimento{
+    height: 300px;
+    padding: 40px 20px;
+    background-color: rgb(255, 251, 0);
+}
+
+.depoimento .container{
+    width: 80%;
+}
+
+.depoimento h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.depoimento .depoimento-single{
+    margin-top: 10px;
+}
+
+.depoimento-single p{
+    font-weight: lighter;
+    font-size: 18px;
+}
+/*setas de navegação dos depoimentos*/
+.navigation{
+    float: left;
+}
+
+.navigation i{
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.navigation .fa-chevron-right{
+    margin-left: 10px;
+}
+
+.author{
+    float: right;
+    margin: 15px 0 0 20px;
+}
+
+.author p{
+    font-weight: normal;
+}
+/**********************/
+
+/*>>> Sessão04 | Contato <<<*/
+section.contato{
+    padding: 60px 0 100px 0;
+}
+
+/*formulario*/
+section.contato form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.contato .form-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    outline: none;
+}
+
+section.contato textarea{
+    height: 100px;
+    padding: 10px 0 0 10px;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+section.contato input[type=submit]{
+    border: none;
+    box-shadow: 2px 2px rgb(211, 207, 9);
+    border-radius: 3px;
+}
+
+form .form-wraper:nth-of-type(5){
+    text-align: center;
+}
+/**********************/
+
+/*>>> Footer / Rodapé */
+footer{
+    padding: 20px 0;
+    color: #fff;
+    background-color: #262626;
+    margin-top: 20px;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul li{
+    line-height: 20px;
+}
+
+footer nav ul li a{
+    color: #fff;
+}
+
+footer p{
+    float: right;
+}
+/**********************/
+
+/******     >>>>> VENDAS <<<<<     ******/
+/*Filtro de vendas*/
+section.vendas{
+    min-height: 90%;
+    margin: 0 0 40px 0;
+}
+
+section.vendas .titulo{
+    padding: 90px 0;
+}
+
+aside.sidebar{
+    width: 30%;
+    float: left;
+}
+
+.search1{
+    width: 200px;
+}
+
+.search1 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    max-width: 250px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 10px auto;
+    position: relative;
+}
+
+.search1 .barra-preco-fill{
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border-radius: 20px 0 0 20px;
+    background: linear-gradient(to left, #fff, #ccc);
+
+}
+
+.pointer-barra{
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: 90%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.valor-pesquisa{
+    max-width: 250px;
+    margin: 8px auto;
+    overflow: hidden;
+}
+
+.valor-pesquisa p{
+    color: #000;
+    font-size: 14px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 50px;
+}
+
+.form-venda-wraper{
+    margin-top: 5px;
+}
+
+/*Vitrine de vendas*/
+.vitrine-venda{
+    width: 70%;
+    float: left;
+}
+
+.vitrine-venda .vitrine-destaques:not(:first-child){
+    margin-top: 40px;
+}
+
+.vitrine-venda .vitrine-single{
+    width: calc(100% / 4);
+}
+/***************************************/
+
+/******     >>>>> VEICULO-DETALHES <<<<<     ******/
+section.venda-single .container{
+    padding: 40px 0;
+}
+
+.info-produto{
+    width: 60%;
+    float: left;
+}
+
+.info-produto .foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-color: #ccc;
+    /*colocar imagem destaque*/
+    /*background-image: url();
+    background-size: contain;
+    background-position: center;*/
+}
+
+.descricao-produto{
+    width: 40%;
+    float: left;
+    padding: 0 20px;
+}
+
+.descricao-produto p{
+    max-width: 360px;
+    margin: 20px 0 40px 0;
+}
+
+nav.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav.galeria .mini-img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+    cursor: pointer;
+}
+
+nav.galeria i{
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+/*************************************************/
+
+/******     >>>>> Sobre <<<<<     ******/
+section.sobre{
+    min-height: 90%;
+}
+
+section.sobre .titulo{
+    padding: 100px 0 60px 0;
+}
+
+section.sobre .img-local{
+    width: 80%;
+    padding-top: 30%;
+    /* min-width: 500px; */
+    min-height: 200px;
+    background-image: url(../images/local.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: #ccc; */
+    margin: 0 auto;
+}
+
+section.sobre .txt-sobre1{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+section.sobre .txt-sobre2{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.txt-sobre2 .mini-img{
+    width: 20%;
+    padding-top: 20%;
+    min-width: 150px;
+    min-height: 150px;
+    float: left;
+    background-color: #ccc;
+}
+
+.txt-sobre2 p{
+    width: 80%;
+    float: left;
+    padding: 10px 50px;
+}
+/**************************************/
+
+/*>>> Responsivo | MediaQueries <<<*/
+@media screen and (max-width: 1240px){
+    header .container{
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .vitrine-venda .vitrine-destaques .vitrine-single{
+        margin: 40px auto;
+        border: 5px solid #fff;
+    }
+
+    .vitrine-venda .vitrine-destaques .vitrine-single a{
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.banner{
+        height: 70vh;
+    }
+
+    aside.sidebar, .vitrine-venda{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .search1{
+        width: 100%;
+    }
+
+    .search2 form{
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        margin-top: 50px;
+    }
+
+    .info-produto{
+        width: 100%;
+    }
+
+    .info-produto .foto-destaque{
+        width: 60%;
+        padding-top: 60%;
+        margin: 10px auto;
+    }
+
+    .descricao-produto{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .descricao-produto p{
+        margin: 20px auto 40px auto;
+    }
+
+    .txt-sobre2 .mini-img{
+        float: none;
+        margin: 10px auto;
+        min-width: 200px;
+        min-height: 200px;
+    }
+    
+    .txt-sobre2 p{
+        width: 100%;
+        float: none;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 838px){
+    header .container{
+        max-width: 460px;
+    }
+
+    section.destaques{
+        padding: 40px 0 50px 0 !important;
+    }
+
+    section.servico-depoimento{
+        height: 50%;
+        flex-direction: column;
+        justify-content: inherit;
+        padding: 0;
+    }
+
+    .servico, .depoimento{
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .servico .container, .depoimento .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .servico .container > div{
+        margin: 0;
+    }
+
+    .servico ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .servico a{
+        display: block;
+        max-width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .w50{
+        width: 100%;
+    }
+
+    section.banner{
+        height: 70vh;
+    }
+
+    .txt-banner{
+        height: 50%;
+        top: 45%;
+    }
+
+    .titulo > div{
+        max-width: 150px;
+    }
+
+    .vitrine-venda .vitrine-destaques .vitrine-single{
+        display: block;
+        width: 100%;
+        /* caso a margin com border nao de certo
+         margin: 40px auto; */
+    }
+
+    section.sobre .img-local{
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    header{
+        background: none;
+    }
+
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    header nav.menu-mobile{
+        /* Deixar display:block para mostrar no modo mobile */
+        /* display: block; */
+    }
+
+    section.banner{
+        background-size: cover;
+        background-image: url(../images/bg-medio.jpg);
+    }
+
+    .txt-banner{
+        top: 25%;
+        height: 30%;
+    }
+
+    .vitrine-single{
+        width: 100%;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    footer nav ul li{
+        float: none;
+        display: inline-block;
+    }
+    
+    footer nav, footer p{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 460px){
+    header .container{
+        max-width: 305px;
+    }
+
+    .txt-banner{
+        width: 100%;
+        height: 100%;
+        transform: none;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .txt-banner p{
+        display: block;
+        transform: none;
+        margin: 20px 0 !important;
+    }
+
+    section.servico-depoimento{
+        height: 70%;
+    }
+
+    .servico, .depoimento{
+        height: 50% !important;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    header .container{
+        max-width: 200px;
+    }
+
+    section.banner{
+        height: 50vh;
+        background-image: url(../images/bg-pequeno.jpg);
+        background-size: cover;
+    }
+}
