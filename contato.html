@@ -32,17 +32,17 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a class="selected" href="venda.html">Vendas</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="venda.html">Vendas</a></li>
+            <li><a class="selected" href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <!--menu-desktop-->
         <nav class="menu-mobile">
           <ul>
-            <li><a class="selected" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a class="selected" href="venda.html">Vendas</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="venda.html">Vendas</a></li>
+            <li><a class="selected" href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <!--menu-mobile-->
@@ -52,40 +52,35 @@
       <!--container-->
     </header>
 
-    <section class="venda-single">
-      <div class="container">
-        <div class="info-produto">
-          <div class="foto-destaque"></div>
-          <nav class="galeria">
-            <i class="fas fa-chevron-left"></i>
-            <div class="mini-img">img1</div>
-            <div class="mini-img">img2</div>
-            <div class="mini-img">img3</div>
-            <div class="mini-img">img4</div>
-            <div class="mini-img">img5</div>
-            <div class="mini-img">img6</div>
-            <i class="fas fa-chevron-right"></i>
-          </nav>
-          <!--galeria-->
+    <section class="local-maps w100" style="margin-top: 50px;">
+      <div class="local w50">
+        <div class="container">
+          <div>
+            <h2>Localização</h2>
+            <ul>
+              <li>Rua Tal tal tal, nº tal - Complemento tal</li>
+              <li>CEP 99999-999</li>
+              <li>Municipio Tal</li>
+              <li>Estado Tal </li>
+            </ul>
+          </div>
         </div>
-        <!--info-produto-->
-
-        <div class="descricao-produto">
-          <h2>R$40.000,00</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia autem
-            dolore deleniti consectetur quae totam omnis pariatur, veniam
-            assumenda nostrum soluta, enim ratione. Sit nemo est praesentium
-            inventore quasi excepturi?
-          </p>
-          <a class="btn" href="">Entre em contato</a>
-        </div>
-        <!--descricao-veiculo-->
-        <div class="clear"></div>
+        <!--container-->
       </div>
-      <!--container-->
+      <!--local-->
+      <div class="maps w50">
+        <div class="container">
+          <h2>Google Maps</h2>
+          <div class="maps-single">
+            <div id="mapa" class="map"></div>
+          </div>
+          <!--depoimento-single-->
+        </div>
+      </div>
+      <!--depoimento-->
+      <div class="clear"></div>
     </section>
-    <!--venda-single-->
+    <!--local-depoimento-->
 
     <section class="contato">
       <div class="container">
@@ -148,64 +143,14 @@
     </section>
     <!--contato-->
 
-    <section class="destaques w100">
-      <div class="container">
-        <div class="titulo">
-          <div></div>
-          <h2>Produtos em destaque</h2>
-          <div></div>
-        </div>
-        <!--titulo-->
-
-        <div class="vitrine-destaques">
-          <div class="vitrine-single">
-            <div class="img-vitrine">Imagem 1</div>
-            <div class="info">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a class="btn" href="#">Mais informações</a>
-            </div>
-            <!--info-->
-          </div>
-          <!--vitrine-single-->
-
-          <div class="vitrine-single">
-            <div class="img-vitrine">Imagem 2</div>
-            <div class="info">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a class="btn" href="#">Mais informações</a>
-            </div>
-            <!--info-->
-          </div>
-          <!--vitrine-single-->
-
-          <div class="vitrine-single">
-            <div class="img-vitrine">Imagem 3</div>
-            <div class="info">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a class="btn" href="#">Mais informações</a>
-            </div>
-            <!--info-->
-          </div>
-          <!--vitrine-single-->
-        </div>
-        <!--vitrine-destaques-->
-        <div class="clear"></div>
-      </div>
-      <!--container-->
-    </section>
-    <!--destaques-->
-
     <footer class="w100">
       <div class="container">
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a class="selected" href="venda.html">Vendas</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="venda.html">Vendas</a></li>
+            <li><a class="selected" href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <p>Todos os direitos reservados © Wesley Jacques</p>
@@ -213,5 +158,9 @@
       </div>
       <!--container-->
     </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6JK4sc2pElV0PfxSb_cgLhKdUYNsrtQk">
+    </script>
+    <script src="js/functions.js"></script>
   </body>
 </html>
