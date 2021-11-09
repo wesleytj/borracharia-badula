@@ -637,7 +637,8 @@ section.local-maps{
 
 section.local-maps .local{
     width: 30%;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     padding: 40px 20px;
     background-color: #262626;
 }
@@ -683,7 +684,7 @@ section.local-maps .local{
 /*maps*/
 section.local-maps .maps{
     width: 70%;
-    height: 500px;
+    height: auto;
     padding: 40px 20px;
     background-color: rgb(255, 251, 0);
 }
