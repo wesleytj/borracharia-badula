@@ -23,26 +23,26 @@
   </head>
 
   <body>
-    <header>
+    <header style="border-bottom: 3px solid rgb(255, 251, 0)">
       <div class="container">
         <div class="logo"></div>
         <!--logo-->
 
         <nav class="menu-desktop">
           <ul>
-            <li><a class="selected" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="venda.html">Vendas</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a class="selected" href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <!--menu-desktop-->
         <nav class="menu-mobile">
           <ul>
-            <li><a class="selected" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="venda.html">Vendas</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a class="selected" href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <!--menu-mobile-->
@@ -52,108 +52,27 @@
       <!--container-->
     </header>
 
-    <section class="banner w100">
-      <div class="container">
-        <div class="txt-banner">
-          <p>Consultorias</p>
-          <p>Compra</p>
-          <p>Venda</p>
-          <p>seuuuuuu@email.aqui</p>
-        </div>
-        <!--txt-banner-->
-      </div>
-      <!--container-->
-    </section>
-    <!--banner-->
-
-    <section class="destaques w100">
-      <div class="container">
-        <div class="titulo">
-          <div></div>
-          <h2>Produtos em destaque</h2>
-          <div></div>
-        </div>
-        <!--titulo-->
-
-        <div class="vitrine-destaques">
-          <div class="vitrine-single">
-            <div class="img-vitrine">Imagem 1</div>
-            <div class="info">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a class="btn" href="veiculo-detalhes.html">Mais informações</a>
-            </div>
-            <!--info-->
-          </div>
-          <!--vitrine-single-->
-
-          <div class="vitrine-single">
-            <div class="img-vitrine">Imagem 2</div>
-            <div class="info">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a class="btn" href="veiculo-detalhes.html">Mais informações</a>
-            </div>
-            <!--info-->
-          </div>
-          <!--vitrine-single-->
-
-          <div class="vitrine-single">
-            <div class="img-vitrine">Imagem 3</div>
-            <div class="info">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <a class="btn" href="veiculo-detalhes.html">Mais informações</a>
-            </div>
-            <!--info-->
-          </div>
-          <!--vitrine-single-->
-        </div>
-        <!--vitrine-destaques-->
-        <div class="clear"></div>
-      </div>
-      <!--container-->
-    </section>
-    <!--destaques-->
-
-    <section class="servico-depoimento w100">
-      <div class="servico w50">
+    <section class="local-maps w100" style="margin-top: 50px;">
+      <div class="local w50">
         <div class="container">
           <div>
-            <h2>Serviços</h2>
+            <h2>Localização</h2>
             <ul>
-              <li>Compra</li>
-              <li>Venda</li>
-              <li>Manutenção</li>
-              <li>Revenda Carros</li>
+              <li>Rua Tal tal tal, nº tal - Complemento tal</li>
+              <li>CEP 99999-999</li>
+              <li>Municipio Tal</li>
+              <li>Estado Tal </li>
             </ul>
           </div>
-          <a class="btn" href="#">Saiba mais</a>
         </div>
         <!--container-->
       </div>
-      <!--servico-->
-      <div class="depoimento w50">
+      <!--local-->
+      <div class="maps w50">
         <div class="container">
-          <h2>Depoimentos</h2>
-          <div class="depoimento-single">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              quia iure repellat voluptatum, inventore illum ea facere velit
-              quas, cumque ipsa optio voluptas, amet hic ab illo magni?
-              Quibusdam, porro?
-            </p>
-            <div class="navigation">
-              <div class="arrows">
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-              <!--arrows-->
-            </div>
-            <!--navigation-->
-            <div class="author">
-              <p>Fulano de Tal</p>
-            </div>
+          <h2>Google Maps</h2>
+          <div class="maps-single">
+            <div id="mapa" class="map"></div>
           </div>
           <!--depoimento-single-->
         </div>
@@ -161,7 +80,7 @@
       <!--depoimento-->
       <div class="clear"></div>
     </section>
-    <!--servico-depoimento-->
+    <!--local-depoimento-->
 
     <section class="contato">
       <div class="container">
@@ -228,10 +147,10 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a class="selected" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="venda.html">Vendas</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a class="selected" href="contato.html">Contato</a></li>
           </ul>
         </nav>
         <p>Todos os direitos reservados © Wesley Jacques</p>
@@ -239,6 +158,9 @@
       </div>
       <!--container-->
     </footer>
-    <!-- <script src="js/function.js"></script> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6JK4sc2pElV0PfxSb_cgLhKdUYNsrtQk">
+    </script>
+    <script src="js/functions.js"></script>
   </body>
 </html>
